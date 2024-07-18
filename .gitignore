@@ -41,5 +41,10 @@ buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 
-### Enviroment Secrets and Variables ###
-.env
+### .ENV ###
+*.env
+
+### GITHUB CONFIGURATION FILES ###
+/.github
+/LICENSE
+/README.md
