@@ -12,9 +12,11 @@ public class APIConfig {
         Dotenv dotenv = Dotenv.configure().load();
         String securityUsername = dotenv.get("SECURITY_USERNAME");
         String securityPassword = dotenv.get("SECURITY_PASSWORD");
+        String mongoUri = dotenv.get("MONGODB_URI");
 
         System.setProperty("SECURITY_USERNAME", securityUsername);
         System.setProperty("SECURITY_PASSWORD", securityPassword);
+        System.setProperty("MONGODB_URI", mongoUri);
 
         return dotenv;
     }
