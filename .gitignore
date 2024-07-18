@@ -40,3 +40,11 @@ dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
+
+### .ENV ###
+*.env
+
+### GITHUB CONFIGURATION FILES ###
+/.github
+/LICENSE
+/README.md
