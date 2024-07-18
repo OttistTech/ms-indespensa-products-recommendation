@@ -18,13 +18,4 @@ public class MsIndespensaTrackingApplication {
 		SpringApplication.run(MsIndespensaTrackingApplication.class, args);
 	}
 
-	@RestController
-	@RequestMapping("/api/v1")
-	public class HelloWorld {
-
-		@GetMapping("/hello")
-		public String hello() {
-			return "Hello World";
-		}
-	}
 }
