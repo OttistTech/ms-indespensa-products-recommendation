@@ -1,16 +1,17 @@
-# Microsservice InDespensa Tracking
-O microserviço de tracking de usuários do aplicativo InDespensa é responsável por registrar eventos de interação dos usuários com diferentes telas e funcionalidades do aplicativo. Ele envia esses dados para um banco MongoDB, possibilitando análises posteriores sobre o uso do aplicativo e comportamento dos usuários.
+# Microsservice InDespensa - Recomendação de Produtos
+O microserviço InDespensa - Recomendação de Produtos é responsável por consultar um banco de dados MongoDB que armazena informações geradas por uma IA criada pelo pessoal de DS, com recomendações de produtos para usuários do aplicativo InDespensa. Essas recomendações são baseadas em análises feitas por um sistema de inteligência artificial.
 
 ## 🚀 Funcionalidades 
-- **Registro de Interações**:Captura eventos como navegação entre telas, cliques em botões, preenchimento de formulários, e outras interações relevantes do usuário.
-- **Armazenamento no MongoDB**: Os dados de tracking são armazenados no banco de dados MongoDB. Com isso, é possível fazer análises extensivas sobre padrões de uso do aplicativo, identificação de problemas de UX e otimizações de performance.
+- **Consulta de Recomendações**: Consulta o MongoDB para recuperar recomendações de produtos personalizadas para cada usuário, baseadas em seus hábitos de consumo e preferências.
+- **Integração com IA**: A IA responsável pelas recomendações é gerida externamente. O microsserviço se conecta ao banco de dados para obter essas informações e repassá-las ao aplicativo InDespensa.
+- **Armazenamento no MongoDB**: Todas as informações de recomendação são armazenadas no MongoDB, possibilitando consultas rápidas e eficientes.
 - **Logs e Monitoramento**: Gera logs detalhados das operações realizadas e oferece suporte a ferramentas de monitoramento para acompanhar o desempenho e a saúde do microserviço.
 
 ## ☕ Tecnologias Utilizadas
 - **Linguagem de Programação**: Java
 - **Framework**: Spring
 - **Banco de Dados**: MongoDB
-- **Serviço de Hospedagem**: Não sabemos ainda
+- **Serviço de Hospedagem**: A definir
 
 ## 🤝 Colaboradores
 <table>
