@@ -37,12 +37,6 @@
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
 		</dependency>
 
-		<!--	SPRING DATA JPA	-->
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-starter-data-jpa</artifactId>-->
-<!--		</dependency>-->
-
 		<!--	SPRING DATA REDIS	-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
