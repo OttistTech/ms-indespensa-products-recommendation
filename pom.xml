@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ottistech.indespensa.api</groupId>
-	<artifactId>ms-indespensa-tracking</artifactId>
+	<artifactId>ms-indespensa-products-recommendation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ms-indespensa-tracking</name>
-	<description>API de tracking do aplicativo InDespensa</description>
+	<name>ms-indespensa-products-recommendation</name>
+	<description>API de recomendações de produtos do aplicativo InDespensa</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -37,16 +37,16 @@
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
 		</dependency>
 
+		<!--	SPRING DATA JPA	-->
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-data-jpa</artifactId>-->
+<!--		</dependency>-->
+
 		<!--	SPRING DATA REDIS	-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-redis</artifactId>
-		</dependency>
-
-		<!--	SPRING SECURITY	-->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 
 		<!--	VALIDATION	-->
@@ -61,40 +61,11 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<!--	SPRING DEVTOOLS	-->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-			<optional>true</optional>
-		</dependency>
-
 		<!--	LOMBOK	-->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
-		</dependency>
-
-		<!--	SPRING STARTERS	-->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-
-		<!--	SPRING SECURITY TEST	-->
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-
-		<!--	.ENV	-->
-		<dependency>
-			<groupId>io.github.cdimascio</groupId>
-			<artifactId>java-dotenv</artifactId>
-			<version>5.2.2</version>
 		</dependency>
 
 		<!--	SWAGGER	-->
