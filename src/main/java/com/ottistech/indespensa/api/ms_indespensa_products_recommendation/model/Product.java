@@ -1,41 +1,38 @@
 package com.ottistech.indespensa.api.ms_indespensa_products_recommendation.model;
 
-
-import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.*;
-import org.springframework.data.mongodb.core.mapping.Document;
+import lombok.Data;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-@Document(collection = "daily_consumption")
+@Data
 public class Product {
 
-    @JsonProperty(value = "user_id")
-    Long userId;
+    @Field("product_id")
+    private Long productId;
 
-    @JsonProperty(value = "product_id")
-    Long productId;
+    @Field("ean_code")
+    private String eanCode;
 
-    String name;
+    private String name;
 
-    @JsonProperty(value = "image_url")
-    String imageUrl;
+    @Field("image_url")
+    private String imageUrl;
 
-    Integer food;
+    @Field("food_id")
+    private Integer foodId;
 
-    Integer category;
+    @Field("category_id")
+    private Integer categoryId;
 
-    String description;
+    private String description;
 
-    Integer brand;
+    @Field("brand_id")
+    private Integer brandId;
 
-    BigDecimal amount;
+    private BigDecimal amount;
 
-    String unity;
+    private String unit;
 
-    String type;
+    private String type;
 }
