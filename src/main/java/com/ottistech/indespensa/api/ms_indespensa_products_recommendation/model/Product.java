@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Document(collection = "consumo_diario")
+@Document(collection = "daily_consumption")
 public class Product {
 
     @JsonProperty(value = "user_id")
