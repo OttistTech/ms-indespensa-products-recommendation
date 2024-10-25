@@ -25,20 +25,20 @@ public class Product {
     @Field("image_url")
     private String imageUrl;
 
-    @Schema(description = "ID of the associated food", example = "200")
-    @Field("food_id")
-    private Integer foodId;
+    @Schema(description = "Name of the associated food", example = "Sugar")
+    @Field("food_name")
+    private String foodName;
 
-    @Schema(description = "ID of the associated category", example = "10")
-    @Field("category_id")
-    private Integer categoryId;
+    @Schema(description = "Name of the associated category", example = "Sweet")
+    @Field("category_name")
+    private String categoryName;
 
     @Schema(description = "Detailed description of the product", example = "A delicious chocolate bar")
     private String description;
 
-    @Schema(description = "ID of the associated brand", example = "300")
-    @Field("brand_id")
-    private Integer brandId;
+    @Schema(description = "Name of the associated brand", example = "Lindt")
+    @Field("brand_name")
+    private String brandName;
 
     @Schema(description = "Amount of the product", example = "500.00")
     private BigDecimal amount;
