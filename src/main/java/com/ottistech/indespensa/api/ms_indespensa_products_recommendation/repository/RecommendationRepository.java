@@ -9,4 +9,5 @@ import java.util.Optional;
 public interface RecommendationRepository extends MongoRepository<Recommendation, ObjectId> {
 
     Optional<Recommendation> findByUserId(Long user);
+
 }

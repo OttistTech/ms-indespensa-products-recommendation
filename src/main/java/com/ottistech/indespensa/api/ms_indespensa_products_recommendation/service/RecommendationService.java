@@ -18,4 +18,5 @@ public class RecommendationService {
         return recommendationRepository.findByUserId(userId)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "No recommendations found for user."));
     }
+
 }
